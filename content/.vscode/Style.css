@@ -1,0 +1,483 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #171a20;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 2%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+a.logo {
+    height: 12px;
+    width: 100px;
+    color: inherit;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: inherit;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+header li{
+    padding-right: 10px;
+    margin-left: 30px;
+}
+
+.center{
+    margin-right: 100px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    display: none;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 1s;
+}
+
+.sidebar li{
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.menu {
+    display: none;
+    font-size: 15px;
+    background-color: #c9c9c91f;
+    color: inherit;
+    padding: 6px;
+    border-radius: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.alpha{
+    width: 100%;
+    height: 500px;
+    background-image: url(images/homepsge/10021.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+.sage{
+    text-align: center;
+    color: #f7f7f7;
+    padding-top: 100px;
+}
+
+.bravo {
+    display: block;
+}
+
+.brave{
+    max-height: 520px;
+    border: 1px;
+    display: flex;
+    overflow-x: auto; 
+    padding-left: 20px;
+}
+
+.bravo::-webkit-scrollbar{
+    width: 0;
+}
+
+.CyberTruck{
+    min-width: 800px;
+    height: 450px;
+    line-height: 10px;
+    background-image: url(images/homepsge/10023.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.ModelX{
+    min-width: 800px;
+    height: 450px;
+    line-height: 10px;
+    background-image: url(images/homepsge/Image5\ .W.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.ModelY{
+    min-width: 800px;
+    height: 450px;
+    line-height: 10px;
+    background-image: url(images/homepsge/10024.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.ModelS{
+    min-width: 800px;
+    height: 450px;
+    line-height: 10px;
+    background-image: url(images/homepsge/Image8.W.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.Model3{
+    min-width: 800px;
+    height: 450px;
+    line-height: 10px;
+    background-image: url(images/homepsge/10025.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.type{
+    padding: 20px;
+    color: #eaeaea;
+}
+
+.name{
+    padding: 20px;
+    padding-top: 270px;
+    color: #eaeaea;
+}
+
+.name img {
+    width: 200px;
+}
+
+h5{
+    font-size: 3rem;
+}
+
+p a{
+    color: inherit;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.click{
+    padding-left: 20px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.order{
+    padding: 18px;
+    background-color: rgb(34, 75, 201);
+    color: #eaeaea;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.charle {
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    
+    max-width: 100%;
+}
+
+.ads {
+    background-image: url(images/homepsge/Image9.M.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 850px;
+    line-height: 50px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.ad {
+    background-image: url(images/homepsge/10028.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 850px;
+    line-height: 50px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    border-radius:5px;
+}
+
+.nme{
+    text-align: left;
+    color: #f7f7f7;
+    padding-top: 270px;
+    margin-left: 9px;
+}
+
+h4{
+    font-size: 3rem;
+    color: inherit;
+    padding-bottom: 25px;
+    color: rgb(255, 255, 255);
+}
+h6{
+    font-size: .9rem;
+}
+
+p{  
+    color: #ebebeb;
+}
+
+.delta {
+    padding: 18px;
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+.accessories {
+    width:100%;
+    height: 500px;
+    padding-bottom: 20px;
+    line-height: 10px;
+    background-image: url(images/homepsge/Image12.W.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.pw {
+    padding: 20px;
+    padding-top: 350px;
+}
+
+.disc {
+    padding: 20px;
+    display: flex;
+    padding-top: 0px;
+}
+
+.info {
+    padding: 18px;
+    background-color: aliceblue;
+    color: #171a20;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+footer {
+      background: #f7f7f7;
+      padding: 20px 20px 20px 24px;
+      text-align: center;
+      color: #555;
+      font-size: 15px;
+      margin-top: auto;
+    }
+    .x{
+        padding: 50px;
+        font-size: .7rem;
+        color: #555;
+        text-align: left;
+    }
+    .footer{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: .7rem;
+    }
+    .footer-info{
+        justify-content: center;
+        margin-bottom: px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: px;
+      padding-left: 15px;
+      font-size: .7rem;
+    }
+    .footer-links a{
+        text-decoration: none;
+        color: #555;
+    }
+    .footer-social {
+      margin-bottom: 5px;
+    }
+    .footer-social a {
+      margin: 0 10px;
+      font-size: 22px;
+      color: #171a20;
+      transition: color 0.2s;
+    }
+    .footer-social a:hover {
+      color: #e82127;
+    }
+    @media(max-width: 900px){
+    header{
+        position: fixed;
+    }
+    .alpha{
+        background-image: url(images/homepsge/10021.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .hide{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .CyberTruck{
+        min-width: 600px;
+    }
+    .ModelX{
+        min-width: 600px;
+    }
+    .ModelS{
+        min-width: 600px;
+    }
+    .ModelY{
+        min-width: 600px;
+    }
+    .Model3{
+        min-width: 600px;
+    }
+    .charle{
+        display: block;
+        padding: 20px;
+    }
+    .ads{
+        max-width: 500px;
+        padding: 10px;
+    }
+    .ad{
+        max-width: 500px;
+        padding: 10px;
+    }
+    .accessories{
+        background-image: url(images/homepsge/Image12.M.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+    .footer{
+        display: block;
+    }
+    .footer-links{
+        display: block;
+    }
+}
+
+@media(max-width: 450px){
+    header{
+        position: fixed;
+    }
+    .alpha{
+        background-image: url(images/homepsge/10021.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .brave{
+        padding-left: 10px;
+    }
+    .CyberTruck{
+        min-width: 350px;
+        margin-right: 15px;
+        background-image: url(images/homepsge/Image3.S.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .ModelX{
+        min-width: 350px;
+        margin-right: 15px;
+        background-image: url(images/homepsge/Image5.S.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .ModelS{
+        min-width: 350px;
+        margin-right: 15px;
+        background-image: url(images/homepsge/Image7.S.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .ModelY{
+        min-width: 350px;
+        margin-right: 15px;
+        background-image: url(images/homepsge/Image6.S.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .Model3{
+        min-width: 350px;
+        margin-right: 15px;
+        background-image: url(images/homepsge/Image8.S.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .charle{
+        display: block;
+        padding: 10px;
+    }
+    .ads{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .ad{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .delta{
+        padding-left: 15px;
+
+    }
+    .accessories{
+        background-image: url(images/homepsge/Image12.M.jpeg);
+        background-position: center;
+        background-size: cover;
+        padding: 1px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .footer{
+        display: block;
+    }
+    .footer-links{
+        display: block;
+    }
+}
